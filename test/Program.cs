@@ -1,42 +1,36 @@
-﻿using System;
-using System.Xml.Linq;
-using System.Linq;
+﻿using System.Windows;
+using System;
+using testing;
+using static testing.Coordinates;
 
-string gmlFilePath = "C:\\Users\\ruvey\\Downloads\\xml\\test.xml";
-
-List<double> XCoords = new List<double>();
-List<double> YCoords = new List<double>();
-XDocument gmlDocument = XDocument.Load(gmlFilePath);
-XNamespace gmlNamespace = "http://www.opengis.net/gml";
-int counter = 0;
-
-foreach (var feature in gmlDocument.Descendants(gmlNamespace + "posList"))
+public class Program
 {
-    string strFeature = feature.Value; // Get the inner text value of the <posList> element
-    string[] coordinates = strFeature.Split(new[] { ' ', '\n', '\r', '\t' }, StringSplitOptions.RemoveEmptyEntries);
-
-    foreach (string coord in coordinates)
+    static void Main(string[] args)
     {
-        if (double.TryParse(coord, out double parsedCoord))
+        // Define the path to the XML file
+        string gmlFilePath = "C:\\Users\\ruvey\\Downloads\\xml\\test.xml";
+
+        // Create an instance of AllCoordinates
+        var coordinates = new AllCoordinates(); // Instantiate the class
+
+        // Call the DivideCoordinates method to process the XML file
+        coordinates.DivideCoordinates(gmlFilePath);
+
+        // Output the X and Y coordinates
+        Console.WriteLine("X Coordinates:");
+
+        foreach (var x in coordinates.GetXCoords())
         {
-            if (counter % 2 == 0)
-            {
-                XCoords.Add(parsedCoord);
-            }
-            else
-            {
-                YCoords.Add(parsedCoord);
-            }
-            counter++;
+            Console.WriteLine(x);
         }
+
+        Console.WriteLine("\nY Coordinates:");
+
+        foreach (var y in coordinates.GetYCoords())
+        {
+            Console.WriteLine(y);
+        }
+
     }
 }
 
-foreach (var x in XCoords)
-{
-    Console.WriteLine($"X: {x}");
-}
-foreach (var y in YCoords)
-{
-    Console.WriteLine($"Y: {y}");
-}
