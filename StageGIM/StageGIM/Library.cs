@@ -1,9 +1,9 @@
-﻿using ManagementSystem.classes;
+﻿using LibraryManagementSystem.classes;
 using System;
 using System.Collections.Generic;
 
 
-namespace ManagementSytem.clases
+namespace LibraryManagementSystem.clases
 {
     public class Library()
     {
@@ -11,7 +11,7 @@ namespace ManagementSytem.clases
 
             //can change public and void later if needed
         public void AddBook()
-        {
+        {   //it adds a book but does not keep the information
             // Prompt the user for book details
             Console.Write("Enter the book title: ");
             string? title = Console.ReadLine();
@@ -43,7 +43,7 @@ namespace ManagementSytem.clases
 
         }
         public void RemoveBook()
-        {
+        {   //it removes a book but does not keep the information
             // ask the user to enter the title of the book they want to remove
             Console.Write("Enter the book title: ");
             string? TitleRemoveBook = Console.ReadLine();
@@ -62,6 +62,7 @@ namespace ManagementSytem.clases
                 Console.WriteLine($"No book with the title '{TitleRemoveBook}' was found");
 
             }
+            //it shows all the book currently in the Library
             Console.WriteLine("Books in the library:");
             foreach (var book in BookList)
             {
@@ -69,7 +70,7 @@ namespace ManagementSytem.clases
             }
         }
         public void BorrowBook()
-        {
+        {   //it borrows a book but does not keep the information
             // ask the user to enter the title of the book they want to Borrow
             Console.Write("Enter the book title that you want to borrow: ");
             string? TitleBorrowBook = Console.ReadLine();
@@ -79,11 +80,9 @@ namespace ManagementSytem.clases
             
             //checking if the the book IsAvailable 
             if (BookToBorrow.IsAvailable != false)
-            {   //it needs to change IsAvalable to false
+            {  
                 Console.WriteLine("borrowed");
                 BookToBorrow.IsAvailable = false;
-
-           
             }
             else
             {
@@ -92,7 +91,7 @@ namespace ManagementSytem.clases
 
         }
         public void ReturnBook()
-        {
+        {   //it returns a book but does not keep the information and if you give a title that you have not added before it does not work:(
             // ask the user to enter the title of the book they want to Borrow
             Console.Write("Enter the book title that you want to return: ");
             string? TitleReturnBook = Console.ReadLine();
@@ -102,10 +101,6 @@ namespace ManagementSytem.clases
             BookToRetun.IsAvailable = true;
 
 
-           //     foreach (var book in BookList)
-           //     {
-           //         Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, ISBN: {book.ISBN}, Genre: {book.Genre}, Available: {book.IsAvailable}");
-          //      }
 
         }
     }
