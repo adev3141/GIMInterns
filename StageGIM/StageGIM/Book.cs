@@ -1,19 +1,24 @@
 ﻿using System;
+using ManagementSystem.classes;
 
-namespace ManagementSytem.clases
+namespace ManagementSystem.classes
 {
-    public class Book(string title, string author, string isbn, string genre, string isAvailable)
+    public class Book
     {
-        //might need to change so i can make it private
-        public string Title = title;
-        public string Author = author;
-        public string ISBN = isbn;
-        public string Genre = genre;
-        public string IsAvailable = isAvailable;
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string ISBN { get; set; }
+        public string Genre { get; set; }
+        public bool IsAvailable { get; set; }  // Changed to bool to reflect true/false availability
 
-
-       
+        // Constructor for Book
+        public Book(string title, string author, string isbn, string genre, bool isAvailable)
+        {
+            this.Title = title;
+            this.Author = author;
+            this.ISBN = isbn;
+            this.Genre = genre;
+            this.IsAvailable = isAvailable;
+        }
     }
-  
 }
-
