@@ -1,4 +1,5 @@
 ﻿using System;
+using ManagementSystem.classes;
 
 namespace ManagementSytem.clases
 {
