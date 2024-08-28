@@ -1,8 +1,8 @@
 ﻿using System;
-using ManagementSystem.classes;
+using LibraryManagementSystem.classes;
 
-namespace ManagementSytem.clases
-{
+namespace LibraryManagementSystem.clases
+{    
     public class User(string name, string userId, string email, string borrowedBooks)
     {
         // Private fields to store the properties of the user
