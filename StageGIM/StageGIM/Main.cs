@@ -7,13 +7,13 @@ namespace ManagementSytem.classes
     {
         static void Main(string[] args)
         {
-            // Book MyBook = new Book("Harry Potter", "J.k ", "422541", "Fantasy", true);
+           
 
             var library = new Library();
             library.Proberen();
+            library.AddBook();
 
-            Console.WriteLine("Press any key to close...");
-            Console.ReadKey();
+            library.RemoveBook();
 
         }
     }
