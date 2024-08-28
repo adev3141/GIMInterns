@@ -2,15 +2,18 @@
 
 namespace ManagementSytem.clases
 {
-    public class Book(string title, string author, string isbn, string genre, bool isAvailable)
+    public class Book(string title, string author, string isbn, string genre, string isAvailable)
     {
-        // Private fields to store the properties of the book
+        //might need to change so i can make it private
         public string Title = title;
         public string Author = author;
         public string ISBN = isbn;
         public string Genre = genre;
-        public bool IsAvailable = isAvailable;
-    }
+        public string IsAvailable = isAvailable;
 
+
+       
+    }
+  
 }
 
