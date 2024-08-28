@@ -1,7 +1,8 @@
 ﻿using System;
-using ManagementSytem.clases;
+using System.Dynamic;
+using LibraryManagementSystem.clases;
 
-namespace ManagementSytem.classes
+namespace LibraryManagementSystem.classes
 {
     class MainWindow
     {
@@ -9,8 +10,6 @@ namespace ManagementSytem.classes
         {
             var library = new Library();
 
-
-       
             library.AddBook();
             library.AddBook();
             library.BorrowBook();
