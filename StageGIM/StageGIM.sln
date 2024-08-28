@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StageGIM", "StageGIM\StageGIM.csproj", "{71A047B7-79F4-46FA-BA46-56357A806C8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71A047B7-79F4-46FA-BA46-56357A806C8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A047B7-79F4-46FA-BA46-56357A806C8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A047B7-79F4-46FA-BA46-56357A806C8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A047B7-79F4-46FA-BA46-56357A806C8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8350BAFC-2CF0-4D8B-9CAC-5EA590401E69}
+	EndGlobalSection
+EndGlobal
