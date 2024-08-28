@@ -7,13 +7,15 @@ namespace ManagementSytem.classes
     {
         static void Main(string[] args)
         {
-           
-
             var library = new Library();
-            library.Proberen();
-            library.AddBook();
 
-            library.RemoveBook();
+
+       
+            library.AddBook();
+            library.AddBook();
+            library.BorrowBook();
+            library.ReturnBook();
+       //     library.RemoveBook();
 
         }
     }
