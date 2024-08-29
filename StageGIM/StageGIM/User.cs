@@ -10,6 +10,28 @@ namespace LibraryManagementSystem.clases
         private string UserId = userId;
         private string Email = email;
         private string BorrowedBooks = borrowedBooks;
+
+        public virtual void RequestBorrowBook()
+        {
+            Library RequestBook = new Library();
+            //shows the books in the list
+            Console.WriteLine("Books in the library:");
+            foreach (var book in RequestBook.BookList)
+            {
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, ISBN: {book.ISBN}, Genre: {book.Genre}, Available: {book.IsAvailable}");
+            }
+
+            Console.Write("Enter the book title that you want to borrow: ");
+            string? TitleBorrowBook = Console.ReadLine();
+            Book? BookToBorrow = RequestBook.BookList.FirstOrDefault(book => book.Title.Equals(TitleBorrowBook, StringComparison.OrdinalIgnoreCase));
+
+
+            Console.WriteLine("it does come here");
+            //BookToBorrow in Library needs to get the input 
+
+          //  RequestBook.BorrowBook();
+
+        }
     }
 }
 
