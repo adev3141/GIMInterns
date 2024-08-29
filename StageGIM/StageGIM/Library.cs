@@ -1,13 +1,14 @@
 ﻿using LibraryManagementSystem.classes;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 
 namespace LibraryManagementSystem.clases
 {
     public class Library()
     {
-        private List<Book> BookList = new List<Book>();
+        public List<Book> BookList = new List<Book>();
 
             //can change public and void later if needed
         public void AddBook()
@@ -69,7 +70,7 @@ namespace LibraryManagementSystem.clases
                 Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, ISBN: {book.ISBN}, Genre: {book.Genre}, Available: {book.IsAvailable}");
             }
         }
-        public void BorrowBook()
+        public virtual void BorrowBook()
         {   //it borrows a book but does not keep the information
             // ask the user to enter the title of the book they want to Borrow
             Console.Write("Enter the book title that you want to borrow: ");
@@ -91,7 +92,7 @@ namespace LibraryManagementSystem.clases
 
         }
         public void ReturnBook()
-        {   //it returns a book but does not keep the information and if you give a title that you have not added before it does not work:(
+        {   
             // ask the user to enter the title of the book they want to Borrow
             Console.Write("Enter the book title that you want to return: ");
             string? TitleReturnBook = Console.ReadLine();
