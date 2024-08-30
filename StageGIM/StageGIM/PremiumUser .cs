@@ -14,13 +14,20 @@ namespace LibraryManagementSystem.clases
         public string MembershipLevel { get; } = membershipLevel;
         public Library Library { get; } = library;
 
-    public override void RequestBorrowBook(Library Library)
-        {//does not work beacause BookToBorrow = null in Library - BorrowBook() goes wrong in User
+        //Am to be able to use BorrowBook but need to be able to borrow more than one. 
 
-          base.RequestBorrowBook(Library);
+        public override void RequestBorrowBook(Library Library)
+        {//need to change that it can borrow more then one book
+            Console.WriteLine("PremiumUser");
+            base.RequestBorrowBook(Library);
+          
         }
 
-   
+        public override void RequestAddBook(Library RequestAdd)//don't know if i need to use this for RequestBorrowBook
+        {
+            base.RequestAddBook(RequestAdd);
+        }
+
     }
 }
 
