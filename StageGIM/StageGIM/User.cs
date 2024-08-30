@@ -12,7 +12,7 @@ namespace LibraryManagementSystem.clases
         private string BorrowedBooks = borrowedBooks;
 
         public virtual void RequestBorrowBook()
-        {
+        {//does not work beacause BookToBorrow = null in Library - BorrowBook()
             Library RequestBook = new Library();
             //shows the books in the list
             Console.WriteLine("Books in the library:");
@@ -23,13 +23,14 @@ namespace LibraryManagementSystem.clases
 
             Console.Write("Enter the book title that you want to borrow: ");
             string? TitleBorrowBook = Console.ReadLine();
+            // Find the book in the list with the matching title
             Book? BookToBorrow = RequestBook.BookList.FirstOrDefault(book => book.Title.Equals(TitleBorrowBook, StringComparison.OrdinalIgnoreCase));
 
 
-            Console.WriteLine("it does come here");
+            Console.WriteLine("it does come here");//it doezs not :(
             //BookToBorrow in Library needs to get the input 
 
-          //  RequestBook.BorrowBook();
+            RequestBook.BorrowBook();
 
         }
     }
