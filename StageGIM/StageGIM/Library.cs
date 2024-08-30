@@ -12,7 +12,7 @@ namespace LibraryManagementSystem.clases
 
             //can change public and void later if needed
         public void AddBook()
-        {   //it adds a book but does not keep the information
+        {  
             // Prompt the user for book details
             Console.Write("Enter the book title: ");
             string? title = Console.ReadLine();
@@ -44,9 +44,9 @@ namespace LibraryManagementSystem.clases
 
         }
         public void RemoveBook()
-        {   //it removes a book but does not keep the information
+        {  
             // ask the user to enter the title of the book they want to remove
-            Console.Write("Enter the book title: ");
+            Console.Write("Enter the title of the book you want to remove: ");
             string? TitleRemoveBook = Console.ReadLine();
 
             // Find the book in the list with the matching title
@@ -70,8 +70,10 @@ namespace LibraryManagementSystem.clases
                 Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, ISBN: {book.ISBN}, Genre: {book.Genre}, Available: {book.IsAvailable}");
             }
         }
+
+       
         public virtual void BorrowBook()
-        {   //it borrows a book but does not keep the information
+        {  
             // ask the user to enter the title of the book they want to Borrow
             Console.Write("Enter the book title that you want to borrow: ");
             string? TitleBorrowBook = Console.ReadLine();
@@ -79,28 +81,42 @@ namespace LibraryManagementSystem.clases
             // Find the book in the list with the matching title
             Book? BookToBorrow = BookList.FirstOrDefault(book => book.Title.Equals(TitleBorrowBook, StringComparison.OrdinalIgnoreCase));
             
-            //checking if the the book IsAvailable 
-            if (BookToBorrow.IsAvailable != false)
-            {  
-                Console.WriteLine("borrowed");
-                BookToBorrow.IsAvailable = false;
+            if (BookToBorrow == null)
+            {//if the title is not in BookList it comes here
+                Console.WriteLine($"There is no book with the title '{TitleBorrowBook}'in the Library");
+
+            }
+            else if(!BookToBorrow.IsAvailable)
+            {//if the title is in BookList but Isavailable == fase it comes here
+                Console.WriteLine($"The book with the title: '{TitleBorrowBook}'is currently not available");
             }
             else
-            {
-                Console.WriteLine($"There is no book with the title: '{TitleBorrowBook}'in the Library");
+            {//if title is in BookList and Isavailable == true it comes here
+                BookToBorrow.IsAvailable = false;
+                Console.WriteLine($"The book with the title:'{TitleBorrowBook}' has been succesfully borrowed ");
             }
+            
 
         }
         public void ReturnBook()
-        {   
-            // ask the user to enter the title of the book they want to Borrow
+        {   //make it so that you can return a book that is not in BookList and then that book should go to BookList!
+            // ask the user to enter the title of the book they want to return
             Console.Write("Enter the book title that you want to return: ");
             string? TitleReturnBook = Console.ReadLine();
-
+        
             //do i need to use this?
-            Book? BookToRetun = BookList.FirstOrDefault(book => book.Title.Equals(TitleReturnBook, StringComparison.OrdinalIgnoreCase));
-            BookToRetun.IsAvailable = true;
+               Book? BookToReturn = BookList.FirstOrDefault(book => book.Title.Equals(TitleReturnBook, StringComparison.OrdinalIgnoreCase));
+            //   BookToReturn.IsAvailable = true;
 
+            if (BookToReturn == null)
+            {
+                Console.WriteLine("Put in the information of the Book that you want to retun");
+                AddBook();
+            }
+            else 
+            {
+                BookToReturn.IsAvailable = true;
+            }
 
 
         }
