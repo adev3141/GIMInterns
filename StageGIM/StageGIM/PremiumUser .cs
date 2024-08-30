@@ -12,13 +12,13 @@ namespace LibraryManagementSystem.clases
     public class PremiumUser(string name, string userId, string email, string borrowedBooks, string membershipLevel, Library library) : User(name, userId, email, borrowedBooks)
     {
         public string MembershipLevel { get; } = membershipLevel;
-        public Library Library { get; }
+        public Library Library { get; } = library;
 
-        public override void RequestBorrowBook()
-        {
+    //    public override void RequestBorrowBook()
+   //     {//does not work beacause BookToBorrow = null in Library - BorrowBook()
 
-            base.RequestBorrowBook();
-        }
+     //       base.RequestBorrowBook();
+     //   }
     }
 }
 
