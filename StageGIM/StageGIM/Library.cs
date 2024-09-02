@@ -117,8 +117,31 @@ namespace LibraryManagementSystem.clases
             {
                 BookToReturn.IsAvailable = true;
             }
+        }
 
+        public void FindBook()
+        {
+            Console.Write("Enter the title of the book you want to find: ");
+            string? TitleFindBook = Console.ReadLine();
+            Book? BookToBorrow = BookList.FirstOrDefault(book => book.Title.Equals(TitleFindBook, StringComparison.OrdinalIgnoreCase));
 
+            //check if book was found
+            if (BookToBorrow != null)
+            {
+               
+                Console.WriteLine($"The book '{BookToBorrow.Title}' has been found.");
+            }
+            else
+            {
+                Console.WriteLine($"No book with the title '{BookToBorrow}' was found");
+
+            }
+            //it shows all the book currently in the Library
+            Console.WriteLine("Books in the library:");
+            foreach (var book in BookList)
+            {
+                Console.WriteLine($"Title: {book.Title}, Author: {book.Author}, ISBN: {book.ISBN}, Genre: {book.Genre}, Available: {book.IsAvailable}");
+            }
         }
     }
 }
