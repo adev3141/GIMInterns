@@ -21,7 +21,7 @@ namespace StudentRecordManagementSystem
 
 
         public void AddStudents()
-        {     
+        {     //It just shows the list below you can't add, remove or serch for a specific student. Need to fix that
 
             Console.WriteLine("Adding the following students: ");
             //Adds number as StudentID(entry key) and name as Name(enry value)
