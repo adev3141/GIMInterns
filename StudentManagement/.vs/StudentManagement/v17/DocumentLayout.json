@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\",
+  "WorkspaceRootPath": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagement\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\studentmanagement\\studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\premiumUser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -16,16 +16,16 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\HelpDesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagement\\HelpDesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\studentmanagement\\studentmanagement\\helpdesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\helpdesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\School.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagement\\School.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\studentmanagement\\studentmanagement\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\school.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentManagement\\Student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\studentmanagement\\studentmanagement\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18E18327-9776-4016-B556-B3DD1F053601}|StudentManagement\\StudentManagement.csproj|solutionrelative:studentmanagement\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,9 +42,9 @@
               "DocumentIndex": 1,
               "Title": "premiumUser.cs",
               "DocumentMoniker": "C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\premiumUser.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\premiumUser.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\premiumUser.cs",
               "ToolTip": "C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\premiumUser.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\premiumUser.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\premiumUser.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T07:15:08.466Z"
@@ -54,9 +54,9 @@
               "DocumentIndex": 2,
               "Title": ".NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "DocumentMoniker": "C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "ToolTip": "C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\obj\\Debug\\net8.0\\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T07:14:46.912Z"
@@ -66,9 +66,9 @@
               "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\Program.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\Program.cs",
               "ToolTip": "C:\\Users\\nijme\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\Program.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\GIMInterns-StijnR\\GIMInterns-StijnR\\library\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-03T07:14:02.137Z"
@@ -77,9 +77,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "HelpDesk.cs",
-              "DocumentMoniker": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\HelpDesk.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\HelpDesk.cs",
               "RelativeDocumentMoniker": "StudentManagement\\HelpDesk.cs",
-              "ToolTip": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\HelpDesk.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\HelpDesk.cs",
               "RelativeToolTip": "StudentManagement\\HelpDesk.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -89,9 +89,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "School.cs",
-              "DocumentMoniker": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\School.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\School.cs",
               "RelativeDocumentMoniker": "StudentManagement\\School.cs",
-              "ToolTip": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\School.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\School.cs",
               "RelativeToolTip": "StudentManagement\\School.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -101,9 +101,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\Student.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\Student.cs",
               "RelativeDocumentMoniker": "StudentManagement\\Student.cs",
-              "ToolTip": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\Student.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\Student.cs",
               "RelativeToolTip": "StudentManagement\\Student.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -113,11 +113,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\Program.cs",
               "RelativeDocumentMoniker": "StudentManagement\\Program.cs",
-              "ToolTip": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\Program.cs",
               "RelativeToolTip": "StudentManagement\\Program.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwKkAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T06:26:30.921Z",
               "EditorCaption": ""

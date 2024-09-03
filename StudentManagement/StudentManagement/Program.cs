@@ -119,7 +119,8 @@ class Program
                     course = Console.ReadLine();
                     Console.WriteLine("Student Class?");
                     string? studentClass = Console.ReadLine();
-                    school.AddStudent(name, course, grades, studentClass);
+                    List<int> newGrades = new List<int>();
+                    school.AddStudent(name, course, newGrades, studentClass);
                     break;
                 case 4:
                     Console.WriteLine("Student ID?");
@@ -130,7 +131,15 @@ class Program
                     {
                         if (i.StudentID == studentID)
                         {
-                            i.Grades.Add(grade);
+                            int index = school.Students.IndexOf(i);
+                          
+                            school.StudentLookUp[i.StudentID].Grades.Add(grade);
+                            Console.WriteLine();
+                            foreach (int k in school.Students[index].Grades) {
+                                Console.WriteLine(k);
+                            
+                            
+                            }
                         }
 
 

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+      "projectUniqueName": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
       "projectName": "StudentManagement",
-      "projectPath": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
+      "projectPath": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\StudentManagement.csproj",
       "packagesPath": "C:\\Users\\nijme\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nijme\\Documents\\GitHub\\GIMInterns\\StudentManagement\\StudentManagement\\obj\\",
+      "outputPath": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\StudentManagement\\StudentManagement\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nijme\\AppData\\Roaming\\NuGet\\NuGet.Config",

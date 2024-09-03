@@ -13,7 +13,7 @@ namespace StudentManagement
         Dictionary<int, Student> AllClasses = new Dictionary<int, Student>();
 
 
-        List<Student> students = new List<Student>();
+        static List<Student> students = new List<Student>();
         public int StudentID { get => studentID; set => studentID = value; }
         internal List<Student> Students { get => students; set => students = value; }
         internal Dictionary<int, Student> StudentLookUp { get => studentLookUp; set => studentLookUp = value; }
