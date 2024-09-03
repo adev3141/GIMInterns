@@ -12,7 +12,9 @@ namespace StudentRecordManagementSystem
         {
             Student kid = new Student();
 
-            kid.AddStudents();
+            kid.AddStudent();
+          //  kid.LookUpStudent("");
+            kid.FindAndDisplayStudent();
         }
     }
 }
