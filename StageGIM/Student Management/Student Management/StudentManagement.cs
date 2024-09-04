@@ -12,13 +12,31 @@ namespace StudentRecordManagementSystem
         //made a dictionary 
 
         public Dictionary<string, Student> FindStudent { get; set; } = new Dictionary<string, Student>();
+
+        public Student LookUpStudent(string StudentID)
+        {
+             Console.WriteLine("Give the studentID from the student who you want to find: ");
+            // Checks if the studentId exists in the dictionary
+            if (FindStudent.ContainsKey(StudentID))
+            {
+                // If it exists, return the corresponding Student object
+                return FindStudent[StudentID];
+            }
+            else
+            {
+                // If the studentId does not exist, return null or handle accordingly
+                Console.WriteLine("Student not found.");
+                return null;
+            }
+
+        }
         public void AddStudent()
         {//You can add students to the Dictionary FindStudent
 
             int NumberOfStudents;//stores how many students user wants to add
             Console.WriteLine("How many students do you want to add? ");
 
-            //  Valid number to be added
+            //  Valid number to be added check
             while (!int.TryParse(Console.ReadLine(), out NumberOfStudents) || NumberOfStudents <= 0)
             {
                 Console.WriteLine("Please enter a valid positive number.");
@@ -72,7 +90,7 @@ namespace StudentRecordManagementSystem
             string? StudentIdUpdate = Console.ReadLine();
 
             //looking if there is a student with that StudentID
-            Student? StudentToUpdate = Student.LookUpStudent(StudentIdUpdate);
+            Student? StudentToUpdate = LookUpStudent(StudentIdUpdate);//goes wrong here
             Console.WriteLine("comes here before loop?");
 
             if (StudentToUpdate != null)
@@ -157,7 +175,7 @@ namespace StudentRecordManagementSystem
             }
         }
 
-
+      
 
     }
 }
