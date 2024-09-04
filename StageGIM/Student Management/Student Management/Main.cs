@@ -22,7 +22,7 @@ namespace StudentRecordManagementSystem
            // kid.LookUpStudent("");
            //kid.RemoveStudent();
            man.UpdateStudent();
-            //kid.FindAndDisplayStudent();
+            kid.FindAndDisplayStudent(man);
            
            // kid.AddToQueue();
         }
