@@ -27,7 +27,7 @@ namespace StudentRecordManagementSystem
         
             Console.WriteLine($"You have been added to the queue.");
 
-            // Displays the contents of the queue. But it does not check if student id and name are together.
+            // Displays the contents of the queue.
             Console.WriteLine("Current queue:");
             foreach (var Student in this.HelpDeskQueue)
             {
