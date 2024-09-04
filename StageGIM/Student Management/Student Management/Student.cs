@@ -26,8 +26,6 @@ namespace StudentRecordManagementSystem
         }
 
        
-      
-
         public void FindAndDisplayStudent(StudentManagement studentManagement)
         {//finds the student and displays the student
 
@@ -47,6 +45,12 @@ namespace StudentRecordManagementSystem
             {
                 Console.WriteLine("No student with that ID exists.");
             }
+        }
+
+        public void AverageGrade()
+        {//needs to be able to calculate average for each student and overall class average.
+            
+
         }
       
       
