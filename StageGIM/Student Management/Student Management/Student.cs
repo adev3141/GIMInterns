@@ -17,8 +17,7 @@ namespace StudentRecordManagementSystem
         public List<int> Grade = new List<int>();
 
         public List<Student> StudentList = new List<Student>();
-      
- 
+        
 
         // Override ToString method to display meaningful student information
         public override string ToString()
@@ -27,33 +26,17 @@ namespace StudentRecordManagementSystem
         }
 
        
-        public Student LookUpStudent(string StudentID)
-        {
-            StudentManagement StudentManagement = new StudentManagement();
-            // Console.WriteLine("Give the studentID from the student who you want to find: ");
-            // Check if the studentId exists in the dictionary
-            if (StudentManagement.FindStudent.ContainsKey(StudentID))
-            {
-                // If it exists, return the corresponding Student object
-                return StudentManagement.FindStudent[StudentID];
-            }
-            else
-            {
-                // If the studentId does not exist, return null or handle accordingly
-                Console.WriteLine("Student not found.");
-                return null;
-            }
+      
 
-        }
+        public void FindAndDisplayStudent(StudentManagement studentManagement)
+        {//finds the student and displays the student
 
-        public void FindAndDisplayStudent()
-        {
             //ask the user for student ID
             Console.WriteLine("Give the studentID from the student who you want to find: ");
             string? StudentIdToFind = Console.ReadLine();
 
             // Using the LookUpStudent method to find the student
-            Student? foundStudent = LookUpStudent(StudentIdToFind);
+            Student? foundStudent = studentManagement.LookUpStudent(StudentIdToFind);
 
             // Displays the result
             if (foundStudent != null)
