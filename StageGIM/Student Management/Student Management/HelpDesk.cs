@@ -9,19 +9,30 @@ namespace StudentRecordManagementSystem
     internal class HelpDeskSystem
     {
         //queue for HelpDesk
-        Queue<string> HelpDeskQueue = new Queue<string>();
+        Queue<Student> HelpDeskQueue = new Queue<Student>();
         Student StudentHelpDesk { get; set; } = new Student();
 
-        public void AddToQueue()
+        public void AddToQueue()//need to see if it adds in fifo manner
         {//adds student to the Queue but does not display the Queue 
-            Console.WriteLine("Please enter your Student ID to enter the queue:");
+
+            Console.WriteLine("Pleade enter your Name: ");
+            string StudentName = Console.ReadLine();
+
+            Console.WriteLine("Please enter your Student ID: ");
             string studentID = Console.ReadLine();
 
-            // Adds the student ID to the queue
-            this.HelpDeskQueue.Enqueue(studentID);
-
+            //creates a new student object
+            Student student = new Student { Name = StudentName, StudentID = studentID };
+            this.HelpDeskQueue.Enqueue(student);
+        
             Console.WriteLine($"You have been added to the queue.");
 
+            // Displays the contents of the queue. But it does not check if student id and name are together.
+            Console.WriteLine("Current queue:");
+            foreach (var Student in this.HelpDeskQueue)
+            {
+                Console.WriteLine($"{Student.Name} (ID: {Student.StudentID})");
+            }
         }
 
     }
