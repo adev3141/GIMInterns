@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StudentRecordManagementSystem;
 
 namespace StudentRecordManagementSystem
 {
@@ -11,10 +12,19 @@ namespace StudentRecordManagementSystem
         static void Main(string[] args)
         {
             Student kid = new Student();
+            HelpDeskSystem help = new HelpDeskSystem();
+            StudentManagement man = new StudentManagement();
+     
 
-            kid.AddStudent();
-          //  kid.LookUpStudent("");
-            kid.FindAndDisplayStudent();
+            man.AddStudent();
+             //help.HelpDesk();
+           // help.AddToQueue();
+           // kid.LookUpStudent("");
+           //kid.RemoveStudent();
+           man.UpdateStudent();
+            //kid.FindAndDisplayStudent();
+           
+           // kid.AddToQueue();
         }
     }
 }
