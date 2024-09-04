@@ -17,14 +17,14 @@ namespace StudentRecordManagementSystem
      
 
             man.AddStudent();
-             //help.HelpDesk();
-           // help.AddToQueue();
+           //  help.HelpDesk();
+           help.AddToQueue();
            // kid.LookUpStudent("");
            //kid.RemoveStudent();
-           man.UpdateStudent();
-            kid.FindAndDisplayStudent(man);
+           //man.UpdateStudent();
+            //kid.FindAndDisplayStudent(man);
            
-           // kid.AddToQueue();
+           // help.AddToQueue();
         }
     }
 }
