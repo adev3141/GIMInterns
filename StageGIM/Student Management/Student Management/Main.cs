@@ -17,7 +17,7 @@ namespace StudentRecordManagementSystem
      
 
             man.AddStudent();
-           //  help.HelpDesk();
+     
            help.AddToQueue();
            // kid.LookUpStudent("");
            //kid.RemoveStudent();
