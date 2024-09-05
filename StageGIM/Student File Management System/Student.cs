@@ -3,15 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace StudentFileManagement
 {
-    internal class Student
+    public class Student
     {
-        string StudentID;
-        string StudentName;
-        string Cource;
-        public List<int> Grade = new List<int>();
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public string Course { get; set; }
+
+        // Parameterless constructor for XML serialization
+        public Student() { }
+
+        // Constructor with parameters
+        public Student(string name, int age, string course)
+        {
+            Name = name;
+            Age = age;
+            Course = course;
+        }
+
 
     }
 }
