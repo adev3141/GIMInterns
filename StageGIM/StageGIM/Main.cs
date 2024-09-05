@@ -10,20 +10,65 @@ namespace LibraryManagementSystem
         {
             var library = new Library();
             var user = new User("Ruveyda", "2", "ruveyda@ruveyda.nl", "0");
-           var pruser = new PremiumUser("Ruveyda", "2", "ruveyda@ruveyda.nl", "0", "1",library);
+            var pruser = new PremiumUser("Ruveyda", "2", "ruveyda@ruveyda.nl", "0", "1",library);
+            bool Running = true;
 
-            //testing if the methods work
+            while (Running)
+            {
+                if (Running)
+                {
+                    Console.WriteLine("Choose an option:");
+                    Console.WriteLine("1. Add a book");
+                    Console.WriteLine("2. remove a book");
+                    Console.WriteLine("3. borrow a book");
+                    Console.WriteLine("4. return a book");
+                    Console.WriteLine("5. find a book");
+                    //Console.WriteLine("6. request to borrow  a book");
+                    Console.WriteLine("7. Exit");
 
+                    string Input = Console.ReadLine();
+
+                    switch (Input)
+                    {
+                        case "1":
+                            library.AddBook();
+                            break;
+                        case "2":
+                            library.RemoveBook();
+                            break;
+                        case "3":
+                            library.BorrowBook();
+                            break;
+                        case "4":
+                            library.ReturnBook();
+                            break;
+                        case "5":
+                            library.FindBook();
+                            break;
+                        case "6":
+                            break;
+
+                    }
+                }
+            }
+
+
+
+
+
+
+
+
+
+               
+          
             
-            library.AddBook();
-            library.AddBook();
-            library.FindBook();
-            pruser.RequestBorrowBook(library);
-         //   user.BorrowBook();
+           // pruser.RequestBorrowBook(library);
+         //   
          //  user.RequestBorrowBook(library);
          //    library.BorrowBook();
-         //library.ReturnBook();
-         //library.RemoveBook();
+         //
+         //
         
         }
     }
