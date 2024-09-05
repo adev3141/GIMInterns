@@ -25,7 +25,20 @@ namespace StudentRecordManagementSystem
             return $"Name: {Name}, Course: {Course}";
         }
 
-       
+        // Method to trigger adding grades through StudentManagement
+     //   public void AddGradesForStudent()
+       // {
+         //   StudentManagement gradeManager = new StudentManagement();
+        //    gradeManager.AddGrade(StudentList);  // Passing StudentList to GradeManager
+      //  }
+
+        // Method to trigger average calculation through StudentManagement
+       // public void CalculateAverages()
+       // {
+     //       StudentManagement gradeManager = new StudentManagement();
+         //   gradeManager.AverageGrade(StudentList);  // Passing StudentList to GradeManager
+       // }
+
         public void FindAndDisplayStudent(StudentManagement studentManagement)
         {//finds the student and displays the student
 
@@ -47,11 +60,7 @@ namespace StudentRecordManagementSystem
             }
         }
 
-        public void AverageGrade()
-        {//needs to be able to calculate average for each student and overall class average.
-            
-
-        }
+       
       
       
 
