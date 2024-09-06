@@ -16,52 +16,77 @@ namespace StudentFileManagement
     {
         static void Main(string[] args)
         {
-            // Create a list of Student objects hard codded
-            var students = new List<Student>
-            {
-                new Student("Alice", 20, "Mathematics"),
-                new Student("Bob", 22, "Computer Science")
-            };
-
-            // Create an instance of the Serialization class
+            ManageStudent manageStudent = new ManageStudent();
             Serialization serialization = new Serialization();
-
-
+            Student student = new Student();
+            bool Running = true;
             // Specify the path for the JSON file
-            string filePathJson = "students.json";
-
-            // Serialize the list of students to the JSON file
-            serialization.SerializeToFile(students, filePathJson);
-            Console.WriteLine("Students serialized to JSON file successfully.");
-
-            // Deserialize the list of students from the file
-            List<Student> deserializedStudentsJson = serialization.DeserializeFromFile(filePathJson);
-            Console.WriteLine("Students deserialized from JSON file successfully.");
-
-          // Print out the deserialized students
-            foreach (var student in deserializedStudentsJson)
-            {
-                Console.WriteLine($"Name: {student.Name}, Age: {student.Age}, Course: {student.Course}");
-            }
-
-
+            string? filePathJson = "students.json";
             // Specify the path for the XML file
             string filePathXml = "students.xml";
 
-            // Serialize the list of students to a file
-            serialization.SerializeToXML(students, filePathXml);
-            Console.WriteLine("Students serialized to file successfully.");
 
-            // Deserialize the list of students from the XML file
-            List<Student> deserializedStudentsXml = serialization.DeserializeFromXML(filePathXml);
-            Console.WriteLine("Students deserialized from XML file successfully.");
+            while (Running)
+            {
+                Console.WriteLine("Choose an option:");
+                Console.WriteLine("1. Add student");
+                Console.WriteLine("2. Remove student");
+                Console.WriteLine("3. Serialize To Json File");
+                Console.WriteLine("4. Deserialize From Json File");
+                Console.WriteLine("5. Serialize To XML File");
+                Console.WriteLine("6. Deserialize from XML File");
+                Console.WriteLine("7. Exit");
 
-            // Print out the deserialized students from XML
-            Console.WriteLine("Deserialized Students from XML:");
-           foreach (var student in deserializedStudentsXml)
-           {
-                Console.WriteLine($"Name: {student.Name}, Age: {student.Age}, Course: {student.Course}");
-           }
+                string Input = Console.ReadLine();
+
+                switch (Input)
+                {
+                    case "1":
+                        manageStudent.AddStudent();
+                        break;
+                    case "2":
+                        manageStudent.RemoveStudent();
+                        break;
+                    case "3":
+                        // Serialize the list of students to the JSON file
+                        serialization.SerializeToFile(manageStudent.StudentList, filePathJson);
+                        Console.WriteLine("Students serialized to JSON file successfully.");
+                        break;
+                    case "4":
+                        // Deserialize the list of students from the file
+                        List<Student> deserializedStudentsJson = serialization.DeserializeFromFile(filePathJson);
+                        Console.WriteLine("Students deserialized from JSON file successfully.");
+
+                        // Print out the deserialized students
+                        foreach (var studentVar in deserializedStudentsJson)
+                        {
+                            Console.WriteLine($"Name: {studentVar.Name}");
+                        }
+                        break;
+                    case "5":
+                        // Serialize the list of students to a file
+                        serialization.SerializeToXML(manageStudent.StudentList, filePathXml);
+                        Console.WriteLine("Students serialized to file successfully.");
+                        break;
+                    case "6":
+                        // Deserialize the list of students from the XML file
+                        List<Student> deserializedStudentsXml = serialization.DeserializeFromXML(filePathXml);
+                        Console.WriteLine("Students deserialized from XML file successfully.");
+
+                        // Print out the deserialized students from XML
+                        Console.WriteLine("Deserialized Students from XML:");
+                        foreach (var studentVar in deserializedStudentsXml)
+                        {
+                            Console.WriteLine($"Name: {studentVar.Name}");
+                        }
+                        break;
+                    case "7":
+                        Running = false;
+                        break;
+
+                }
+
+            }
         }
 
     }
