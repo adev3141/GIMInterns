@@ -12,8 +12,9 @@ namespace LibraryManagementSystem
         public string UserId { get; set; }
         public string Email { get; set; }
         public string BorrowedBooks { get; set; }
-       // public enum membership;
-        // Constructor to initialize the user
+        public bool IsPremium { get; set; } // Add a boolean to indicate if the user is premium
+                                         
+         // Constructor to initialize the user
         public User(string name, string userId, string email, string borrowedBooks)
         {
             Name = name;
@@ -22,8 +23,6 @@ namespace LibraryManagementSystem
             BorrowedBooks = borrowedBooks;
             //membershipLevel = membershipLevel;
         }
-
-
 
         public virtual void BorrowBookPremium(Library RequestBook)//now has all info from Library
         {

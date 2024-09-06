@@ -10,15 +10,10 @@ namespace LibraryManagementSystem
    
     public class Library()
     {
-        public enum MembershipLevel
-        {
-            User = 1,
-            Premium = 2
-        }
+        
 
         public List<Book> BookList = new List<Book>();
-        MembershipLevel MembershipLevelLibrary = new MembershipLevel();
-
+    
         //can change public and void later if needed
         public void AddBook()
         {
@@ -81,11 +76,11 @@ namespace LibraryManagementSystem
         }
 
 
+        // Method to borrow a book, considering user's membership status
         public void BorrowBook(User user)
         {
-            if (MembershipLevel.User == MembershipLevel.Premium)
+            if (user.IsPremium)
             {
-
                 BorrowBookPremium(user);
             }
             else
@@ -121,27 +116,21 @@ namespace LibraryManagementSystem
             }
         }
 
-        public void BorrowBookPremium(User user)
+        public void BorrowBookPremium(User user)//only the users who have premium should be able to do this.
         {
-            if (MembershipLevel.User != MembershipLevel.Premium)
-            {
-                Console.WriteLine("You must be a premium user to borrow more than one book.");
-                return;
-            }
+            Console.WriteLine("Enter the number of books you want to borrow:");
+            string? input = Console.ReadLine();
 
-            Console.WriteLine("Give the number of books you want to borrow:");
-            string AmountBookInput = Console.ReadLine();
-
-            if (int.TryParse(AmountBookInput, out int AmountBooks) && AmountBooks > 0)
+            if (int.TryParse(input, out int numBooks) && numBooks > 0)
             {
-                for (int counter = 0; counter < AmountBooks; counter++)
+                for (int i = 0; i < numBooks; i++)
                 {
-                    BorrowBookStandard(); // Call the standard borrow method for each book
+                    BorrowBookStandard();
                 }
             }
             else
             {
-                Console.WriteLine("Invalid number of books");
+                Console.WriteLine("Invalid number of books.");
             }
         }
     

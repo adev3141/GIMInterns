@@ -9,10 +9,30 @@ namespace LibraryManagementSystem
     {
         static void Main(string[] args)
         {
+
             var library = new Library();
-            var user = new User("Ruveyda", "2", "ruveyda@ruveyda.nl","0");
-            var pruser = new PremiumUser("Ruveyda", "2", "ruveyda@ruveyda.nl", "0", library);
+            bool IsPremium = false;
             bool Running = true;
+
+            // Ask if the user is a premium user
+            Console.WriteLine("Are you a premium user? (yes/no): ");
+            string? UserTypeInput = Console.ReadLine()?.Trim().ToLower();
+
+            if (UserTypeInput == "yes")
+            {
+                IsPremium = true;
+            }
+
+            // Creating the user based on input
+            User user;
+            if (IsPremium)
+            {
+                user = new PremiumUser("Ruveyda", "2", "ruveyda@ruveyda.nl", "0", library);
+            }
+            else
+            {
+                user = new User("Ruveyda", "2", "ruveyda@ruveyda.nl", "0");
+            }
 
             while (Running)
             {
@@ -24,7 +44,7 @@ namespace LibraryManagementSystem
                     Console.WriteLine("3. borrow a book");
                     Console.WriteLine("4. return a book");
                     Console.WriteLine("5. find a book");
-                    Console.WriteLine("6. borrow a book for primium");
+                    Console.WriteLine("6. borrow multiple books (only premium users)");
                     Console.WriteLine("7. Exit");
 
                     string Input = Console.ReadLine();
@@ -47,8 +67,17 @@ namespace LibraryManagementSystem
                             library.FindBook();
                             break;
                         case "6":
-                            pruser.BorrowBookPremium(library);//this is for premium users need to make it so only they can use this
+                            // Only allow premium users to access this
+                            if (IsPremium && user is PremiumUser premiumUser)
+                            {
+                                premiumUser.BorrowBookPremium(library);
+                            }
+                            else
+                            {
+                                Console.WriteLine("This option is only available to premium users.");
+                            }
                             break;
+                            
                         case "7":
                             Running = false;
                             break;
