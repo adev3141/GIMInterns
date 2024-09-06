@@ -6,6 +6,7 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.Data.SqlTypes;
 using System.Diagnostics;
+using Student_File_Management_System;
 namespace Student_File_Management_System
 {
     class Program
@@ -17,7 +18,7 @@ namespace Student_File_Management_System
             bool loop = true;
             string path = "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\File management system\\Student File Management System\\dataFiles\\";
             Student k = null;
-            ToXml xml = new ToXml();
+            fileConverter fileConverter = new fileConverter();
             SavedRecords savedRecords = new SavedRecords();
             Student chosenStudent = null;
             School school = new School();
@@ -94,13 +95,9 @@ namespace Student_File_Management_System
                                     Console.WriteLine("File name?");
                                     string fileName = Console.ReadLine()+".json";
                                     string path2 = path+fileName;
-                                    using (StreamWriter sw = new StreamWriter(path2))
-                                    {
-                                        var jsonString = JsonSerializer.Serialize(i);
-                                        Console.WriteLine(jsonString);
-                                        savedRecords.JsonRecords.Add(jsonString);
-                                        sw.WriteLine(jsonString);
-                                    }
+                                    string jsonString = fileConverter.SerializeToJson(path2, i);
+                                    savedRecords.JsonRecords.Add(jsonString);
+                                    
 
 
 
@@ -112,7 +109,7 @@ namespace Student_File_Management_System
                                     string path2 = path + fileName;
                                     using (StreamWriter sw = new StreamWriter(path2))
                                     {
-                                        string xmlString = xml.SerializeToXml(i);
+                                        string xmlString = fileConverter.SerializeToXml(i);
                                         Console.WriteLine(xmlString);
                                         savedRecords.XmlRecords.Add(xmlString);
                                         sw.WriteLine(xmlString);

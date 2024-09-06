@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 using System.Xml.Serialization;
+using System.IO;
+using System.Xml;
+using System.Xml.Serialization;
+using System.Data.SqlTypes;
+using System.Diagnostics;
+
 
 namespace Student_File_Management_System
 {
-     class ToXml
+     class fileConverter
     {
         public string SerializeToXml<T>(T obj)
         {
@@ -24,5 +26,16 @@ namespace Student_File_Management_System
                 return stringWriter.ToString();
             }
         }
-    }
+        public string SerializeToJson(string path2, Student i)
+        {
+            string jsonString = "";
+            using (StreamWriter sw = new StreamWriter(path2)) {
+                 jsonString = JsonSerializer.Serialize(i);
+                Console.WriteLine(jsonString);
+                sw.WriteLine(jsonString);
+            }
+            return jsonString;
+            
+                                    }
+}
 }
