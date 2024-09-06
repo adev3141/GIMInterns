@@ -17,6 +17,7 @@ namespace Student_File_Management_System
             bool loop = true;
             string path = "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\File management system\\Student File Management System\\dataFiles\\";
             Student k = null;
+            ToXml xml = new ToXml();
             SavedRecords savedRecords = new SavedRecords();
             Student chosenStudent = null;
             School school = new School();
@@ -111,7 +112,7 @@ namespace Student_File_Management_System
                                     string path2 = path + fileName;
                                     using (StreamWriter sw = new StreamWriter(path2))
                                     {
-                                        string xmlString = SerializeToXml(i);
+                                        string xmlString = xml.SerializeToXml(i);
                                         Console.WriteLine(xmlString);
                                         savedRecords.XmlRecords.Add(xmlString);
                                         sw.WriteLine(xmlString);
@@ -159,21 +160,7 @@ namespace Student_File_Management_System
             
             }
         }
-        public static string SerializeToXml<T>(T obj)
-        {
-            // Initialize an XmlSerializer with the type of the object to serialize
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
-
-            // Use a StringWriter to hold the serialized XML
-            using (StringWriter stringWriter = new StringWriter())
-            {
-                // Serialize the object to the StringWriter
-                serializer.Serialize(stringWriter, obj);
-
-                // Return the XML as a string
-                return stringWriter.ToString();
-            }
-        }
+        
     }
     
 }
