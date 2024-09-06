@@ -46,6 +46,7 @@ namespace LibraryManagementSystem
                             library.FindBook();
                             break;
                         case "6":
+                            Running = false;
                             break;
 
                     }
