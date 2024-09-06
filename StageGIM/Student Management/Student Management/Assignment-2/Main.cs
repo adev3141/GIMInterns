@@ -58,6 +58,7 @@ namespace StudentRecordManagementSystem
                         kid.FindAndDisplayStudent(man);
                         break;
                     case "9":
+                        Running = false;
                         break;
                 }
 
