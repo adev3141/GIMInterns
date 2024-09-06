@@ -2,17 +2,26 @@
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
+using static LibraryManagementSystem.User;
 
 
 namespace LibraryManagementSystem
 {
+   
     public class Library()
     {
-        public List<Book> BookList = new List<Book>();
+        public enum MembershipLevel
+        {
+            User = 1,
+            Premium = 2
+        }
 
-            //can change public and void later if needed
+        public List<Book> BookList = new List<Book>();
+        MembershipLevel MembershipLevelLibrary = new MembershipLevel();
+
+        //can change public and void later if needed
         public void AddBook()
-        {  
+        {
             // Prompt the user for book details
             Console.Write("Enter the book title: ");
             string? title = Console.ReadLine();
@@ -44,7 +53,7 @@ namespace LibraryManagementSystem
 
         }
         public void RemoveBook()
-        {  
+        {
             // ask the user to enter the title of the book they want to remove
             Console.Write("Enter the title of the book you want to remove: ");
             string? TitleRemoveBook = Console.ReadLine();
@@ -71,22 +80,37 @@ namespace LibraryManagementSystem
             }
         }
 
-       
-        public virtual void BorrowBook()
-        {  
-            // ask the user to enter the title of the book they want to Borrow
+
+        public void BorrowBook(User user)
+        {
+            if (MembershipLevel.User == MembershipLevel.Premium)
+            {
+
+                BorrowBookPremium(user);
+            }
+            else
+            {
+                BorrowBookStandard();
+            }
+        }
+
+        public virtual void BorrowBookStandard()
+        {  // ask the user to enter the title of the book they want to Borrow
+
+            //need to make it so that user can only borrow one and Premium user more then 0ne
+
             Console.Write("Enter the book title that you want to borrow: ");
             string? TitleBorrowBook = Console.ReadLine();
 
             // Find the book in the list with the matching title
             Book? BookToBorrow = BookList.FirstOrDefault(book => book.Title.Equals(TitleBorrowBook, StringComparison.OrdinalIgnoreCase));
-            
+
             if (BookToBorrow == null)
             {//if the title is not in BookList it comes here
                 Console.WriteLine($"There is no book with the title '{TitleBorrowBook}'in the Library");
 
             }
-            else if(!BookToBorrow.IsAvailable)
+            else if (!BookToBorrow.IsAvailable)
             {//if the title is in BookList but Isavailable == fase it comes here
                 Console.WriteLine($"The book with the title: '{TitleBorrowBook}'is currently not available");
             }
@@ -95,29 +119,54 @@ namespace LibraryManagementSystem
                 BookToBorrow.IsAvailable = false;
                 Console.WriteLine($"The book with the title:'{TitleBorrowBook}' has been succesfully borrowed ");
             }
-            
-
         }
-        public void ReturnBook()
-        {   //make it so that you can return a book that is not in BookList and then that book should go to BookList!
-            // ask the user to enter the title of the book they want to return
-            Console.Write("Enter the book title that you want to return: ");
-            string? TitleReturnBook = Console.ReadLine();
-        
-            //do i need to use this?
-               Book? BookToReturn = BookList.FirstOrDefault(book => book.Title.Equals(TitleReturnBook, StringComparison.OrdinalIgnoreCase));
-            //   BookToReturn.IsAvailable = true;
 
-            if (BookToReturn == null)
+        public void BorrowBookPremium(User user)
+        {
+            if (MembershipLevel.User != MembershipLevel.Premium)
             {
-                Console.WriteLine("Put in the information of the Book that you want to retun");
-                AddBook();
+                Console.WriteLine("You must be a premium user to borrow more than one book.");
+                return;
             }
-            else 
+
+            Console.WriteLine("Give the number of books you want to borrow:");
+            string AmountBookInput = Console.ReadLine();
+
+            if (int.TryParse(AmountBookInput, out int AmountBooks) && AmountBooks > 0)
             {
-                BookToReturn.IsAvailable = true;
+                for (int counter = 0; counter < AmountBooks; counter++)
+                {
+                    BorrowBookStandard(); // Call the standard borrow method for each book
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid number of books");
             }
         }
+    
+
+
+    public void ReturnBook()
+    {   //make it so that you can return a book that is not in BookList and then that book should go to BookList!
+        // ask the user to enter the title of the book they want to return
+        Console.Write("Enter the book title that you want to return: ");
+        string? TitleReturnBook = Console.ReadLine();
+
+        //do i need to use this?
+        Book? BookToReturn = BookList.FirstOrDefault(book => book.Title.Equals(TitleReturnBook, StringComparison.OrdinalIgnoreCase));
+        //   BookToReturn.IsAvailable = true;
+
+        if (BookToReturn == null)
+        {
+            Console.WriteLine("Put in the information of the Book that you want to retun");
+            AddBook();
+        }
+        else
+        {
+            BookToReturn.IsAvailable = true;
+        }
+    }
 
         public void FindBook()
         {

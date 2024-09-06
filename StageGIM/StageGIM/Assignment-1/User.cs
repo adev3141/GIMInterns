@@ -2,22 +2,33 @@
 using LibraryManagementSystem;
 
 namespace LibraryManagementSystem
-{    
-    public class User(string name, string userId, string email, string borrowedBooks): Library
+{
+   
+    public class User
     {
-        // Private fields to store the properties of the user
-        //I'm not using them for now :(
-        private string Name = name;
-        private string UserId = userId;
-        private string Email = email;
-        private string BorrowedBooks = borrowedBooks;
+       
 
-
-     
-        public virtual void RequestBorrowBook(Library RequestBook)//now has all info from Library
+        public string Name { get; set; }
+        public string UserId { get; set; }
+        public string Email { get; set; }
+        public string BorrowedBooks { get; set; }
+       // public enum membership;
+        // Constructor to initialize the user
+        public User(string name, string userId, string email, string borrowedBooks)
         {
+            Name = name;
+            UserId = userId;
+            Email = email;
+            BorrowedBooks = borrowedBooks;
+            //membershipLevel = membershipLevel;
+        }
 
-            RequestBook.BorrowBook();
+
+
+        public virtual void BorrowBookPremium(Library RequestBook)//now has all info from Library
+        {
+           
+            RequestBook.BorrowBookStandard();
 
         }
 

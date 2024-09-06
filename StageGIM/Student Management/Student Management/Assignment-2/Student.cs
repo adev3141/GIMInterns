@@ -10,9 +10,9 @@ namespace StudentRecordManagementSystem
 {
     internal class Student
     {
-        public string? StudentID { get; set; }
-        public string? Name { get; set; }
-        public string? Course { get; set; }
+        public string StudentID { get; set; }
+        public string Name { get; set; }
+        public string Course { get; set; }
 
         public List<int> Grade = new List<int>();
 

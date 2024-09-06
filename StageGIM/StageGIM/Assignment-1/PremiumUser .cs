@@ -9,15 +9,17 @@ using LibraryManagementSystem;
 
 namespace LibraryManagementSystem
 {
-    public class PremiumUser(string name, string userId, string email, string borrowedBooks, string membershipLevel, Library library) : User(name, userId, email, borrowedBooks)
+    public class PremiumUser(string name, string userId, string email, string borrowedBooks, Library library) : User(name, userId, email, borrowedBooks)
     {
-        public string MembershipLevel { get; } = membershipLevel;
+      //  public string MembershipLevel { get; } = membershipLevel;
         public Library Library { get; } = library;
 
-        //Am to be able to use BorrowBook but need to be able to borrow more than one. 
+     
 
-        public override void RequestBorrowBook(Library Library)
-        {
+        public override void BorrowBookPremium(Library Library)
+        {//borrows more then one book 
+
+            
 
             Console.WriteLine("Give the number of books you want to borrow");//asks for amount of books to borrow and keeps it in variable
             string AmountBookInput = Console.ReadLine();
@@ -27,7 +29,7 @@ namespace LibraryManagementSystem
             {
                 for (int counter = 0; counter < AmountBooks; counter++)
                 {
-                    base.RequestBorrowBook(Library);
+                    base.BorrowBookPremium(Library);
                 }
             }
             else
