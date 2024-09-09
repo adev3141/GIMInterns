@@ -7,6 +7,7 @@ using System.Xml.Serialization;
 using System.Data.SqlTypes;
 using System.Diagnostics;
 using Student_File_Management_System;
+using System;
 namespace Student_File_Management_System
 {
     class Program
@@ -46,18 +47,8 @@ namespace Student_File_Management_System
                     case 2:
                         Console.WriteLine("Student ID?");
                         int id = Convert.ToInt32 (Console.ReadLine());
-                        foreach (Student i in school.Students) {
-                           
-                            if (id == i.StudentID)
-                            {
-                                 k = i;
-
-
-                            }
-                           
                         
-                        }
-                        school.Students.Remove(k);
+                        school.Students.RemoveAt(school.getIndexOfStudent(school, id));
                        
                         
                         break;
@@ -138,17 +129,8 @@ namespace Student_File_Management_System
                         int studentID = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("What grade?");
                         int grade = Convert.ToInt32(Console.ReadLine());
-                        foreach (Student i in school.Students)
-                        {
-                            if (i.StudentID == studentID)
-                            {
-                                int index = school.Students.IndexOf(i);
-                                school.Students[index].Grades.Add(grade);
-                                
-                            }
-
-
-                        }
+                        int index = school.getIndexOfStudent(school, studentID);
+                        school.Students[index].Grades.Add(grade);
                         break;
                 
                 }
