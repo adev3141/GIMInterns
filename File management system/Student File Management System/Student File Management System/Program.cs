@@ -18,7 +18,7 @@ namespace Student_File_Management_System
             // Display the number of command line arguments.
             bool loop = true;
             string path = "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\File management system\\Student File Management System\\dataFiles\\";
-            Student k = null;
+            
             fileConverter fileConverter = new fileConverter();
             SavedRecords savedRecords = new SavedRecords();
             Student chosenStudent = null;
