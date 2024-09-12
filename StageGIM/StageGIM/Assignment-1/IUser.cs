@@ -10,6 +10,6 @@ namespace LibraryManagementSystem
     {//not sure if I did this right
         void BorrowBook();
 
-        void RetunrBook();
+        void ReturnBook();
     }
 }
