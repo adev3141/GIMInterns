@@ -16,7 +16,7 @@ namespace StudentRecordManagementSystem
 
         public List<int> Grade = new List<int>();
 
-        public List<Student> StudentList = new List<Student>();
+     
         
 
         // Override ToString method to display meaningful student information

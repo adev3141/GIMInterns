@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Student_Management.Assignment_2;
 using StudentRecordManagementSystem;
 
 namespace StudentRecordManagementSystem
@@ -14,6 +15,7 @@ namespace StudentRecordManagementSystem
             Student kid = new Student();
             HelpDeskSystem help = new HelpDeskSystem();
             StudentManagement man = new StudentManagement();
+            ClassRoom classRoom = new ClassRoom();
             bool Running = true;
 
             while (Running) 
@@ -35,15 +37,15 @@ namespace StudentRecordManagementSystem
                 {   
                     //adds a student 
                     case "1":
-                        kid.StudentList.Add(man.AddStudent());
+                        classRoom.StudentList.Add(man.AddStudent());
                         break;
                     //adds a grade
                     case "2":
-                        man.AddGrade(kid.StudentList);
+                        man.AddGrade(classRoom.StudentList);
                         break;
                     //displays the average grade
                     case "3":
-                        man.AverageGrade(kid.StudentList);
+                        man.AverageGrade(classRoom.StudentList);
                         break;
                     //adds student to the help desk queue
                     case "4":

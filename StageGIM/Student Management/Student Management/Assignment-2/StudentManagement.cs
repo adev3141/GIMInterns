@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Management.Assignment_2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -9,6 +10,7 @@ namespace StudentRecordManagementSystem
 {
     internal class StudentManagement
     {
+        ClassRoom ClassRoom = new ClassRoom();
         Student Student { get; set; } = new Student();
         //made a dictionary 
         public Dictionary<string, Student> FindStudent { get; set; } = new Dictionary<string, Student>();
@@ -71,7 +73,7 @@ namespace StudentRecordManagementSystem
                 };
 
                 // Add the student to the StudentList
-                Student.StudentList.Add(NewStudent);
+                ClassRoom.StudentList.Add(NewStudent);
 
                 // Add the student to the dictionary
                 FindStudent.Add(StudentID, NewStudent);
@@ -120,7 +122,7 @@ namespace StudentRecordManagementSystem
                     counter++;
                     if (k.Name == NameChoice) 
                     {
-                        Student.StudentList[counter - 1].Grade.Add(NumberGrade);
+                        ClassRoom.StudentList[counter - 1].Grade.Add(NumberGrade);
                         Console.WriteLine("grade toegevoegd");
                     }
                 
@@ -134,13 +136,13 @@ namespace StudentRecordManagementSystem
         public void AverageGrade(List<Student> StudentList)
         {//needs to be able to calculate average for each student and overall class average.does it just for 1 student for now
 
-            if (Student.StudentList.Count() == 0)//looks if there are students in the list
+            if (ClassRoom.StudentList.Count() == 0)//looks if there are students in the list
             {
                 Console.WriteLine("No student avalable");
                 return;
             }
 
-            foreach (var studentTeller in Student.StudentList)//lookst if there are grades in list grade
+            foreach (var studentTeller in ClassRoom.StudentList)//lookst if there are grades in list grade
             {
                 if (studentTeller.Grade.Count == 0)
                 {
@@ -188,7 +190,7 @@ namespace StudentRecordManagementSystem
                 }
 
                 //finds the student in list and updates it
-                var StudentInList = Student.StudentList.FirstOrDefault(s => s.StudentID == StudentIdUpdate);
+                var StudentInList = ClassRoom.StudentList.FirstOrDefault(s => s.StudentID == StudentIdUpdate);
                 if (StudentInList != null)
                 {
                     StudentInList.Name = StudentToUpdate.Name;
@@ -235,7 +237,7 @@ namespace StudentRecordManagementSystem
                 };
 
                 // remove the student to the StudentList
-                Student.StudentList.Remove(NewStudent);
+                ClassRoom.StudentList.Remove(NewStudent);
 
                 // remove the student to the dictionary
                 FindStudent.Remove(StudentID, out NewStudent);
