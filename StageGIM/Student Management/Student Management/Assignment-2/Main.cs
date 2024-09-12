@@ -32,31 +32,40 @@ namespace StudentRecordManagementSystem
                 string Input =Console.ReadLine();
 
                 switch (Input)
-                {
+                {   
+                    //adds a student 
                     case "1":
                         kid.StudentList.Add(man.AddStudent());
                         break;
+                    //adds a grade
                     case "2":
                         man.AddGrade(kid.StudentList);
                         break;
+                    //displays the average grade
                     case "3":
                         man.AverageGrade(kid.StudentList);
                         break;
+                    //adds student to the help desk queue
                     case "4":
                         help.AddToQueue();
                         break;
+                    //you can look up a student 
                     case "5":
                         man.LookUpStudent(kid.StudentID);
                         break;
+                    //you can remove a student
                     case "6":
                         man.RemoveStudent();
                         break;
+                    //you can change something of the student like the name, grade ect.
                     case "7":
                         man.UpdateStudent();
                         break;
+                    //you can look up a student and display said student
                     case "8":
                         kid.FindAndDisplayStudent(man);
                         break;
+                    //you stop running the application
                     case "9":
                         Running = false;
                         break;
