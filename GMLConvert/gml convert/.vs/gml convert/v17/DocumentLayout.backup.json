@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\GMLConvert\\gml convert\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CEE4AF8-3188-4279-9905-28CA4DFF67F0}|gml convert\\gml convert.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\gmlconvert\\gml convert\\gml convert\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CEE4AF8-3188-4279-9905-28CA4DFF67F0}|gml convert\\gml convert.csproj|solutionrelative:gml convert\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CEE4AF8-3188-4279-9905-28CA4DFF67F0}|gml convert\\gml convert.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\gmlconvert\\gml convert\\gml convert\\converter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CEE4AF8-3188-4279-9905-28CA4DFF67F0}|gml convert\\gml convert.csproj|solutionrelative:gml convert\\converter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CEE4AF8-3188-4279-9905-28CA4DFF67F0}|gml convert\\gml convert.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\gmlconvert\\gml convert\\gml convert\\xmlclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CEE4AF8-3188-4279-9905-28CA4DFF67F0}|gml convert\\gml convert.csproj|solutionrelative:gml convert\\xmlclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36EDB43D-C25A-48E7-8896-7EA0463A996E}|..\\..\\File management system\\Student File Management System\\Student File Management System\\Student File Management System.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\file management system\\student file management system\\student file management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36EDB43D-C25A-48E7-8896-7EA0463A996E}|..\\..\\File management system\\Student File Management System\\Student File Management System\\Student File Management System.csproj|c:\\users\\nijme\\desktop\\opdrachtenstage\\file management system\\student file management system\\student file management system\\toxml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "xmlClass.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\GMLConvert\\gml convert\\gml convert\\xmlClass.cs",
+              "RelativeDocumentMoniker": "gml convert\\xmlClass.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\GMLConvert\\gml convert\\gml convert\\xmlClass.cs",
+              "RelativeToolTip": "gml convert\\xmlClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T08:58:11.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\File management system\\Student File Management System\\Student File Management System\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\File management system\\Student File Management System\\Student File Management System\\Program.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\File management system\\Student File Management System\\Student File Management System\\Program.cs",
+              "RelativeToolTip": "..\\..\\File management system\\Student File Management System\\Student File Management System\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T08:41:48.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "converter.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\GMLConvert\\gml convert\\gml convert\\converter.cs",
+              "RelativeDocumentMoniker": "gml convert\\converter.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\GMLConvert\\gml convert\\gml convert\\converter.cs",
+              "RelativeToolTip": "gml convert\\converter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T08:41:10.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ToXml.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\File management system\\Student File Management System\\Student File Management System\\ToXml.cs",
+              "RelativeDocumentMoniker": "..\\..\\File management system\\Student File Management System\\Student File Management System\\ToXml.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\File management system\\Student File Management System\\Student File Management System\\ToXml.cs",
+              "RelativeToolTip": "..\\..\\File management system\\Student File Management System\\Student File Management System\\ToXml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T08:40:35.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\GMLConvert\\gml convert\\gml convert\\Program.cs",
+              "RelativeDocumentMoniker": "gml convert\\Program.cs",
+              "ToolTip": "C:\\Users\\nijme\\Desktop\\OpdrachtenStage\\GMLConvert\\gml convert\\gml convert\\Program.cs",
+              "RelativeToolTip": "gml convert\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T08:36:32.012Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
