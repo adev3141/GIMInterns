@@ -31,7 +31,7 @@ The internship program is divided into multiple phases, each focusing on differe
 1. **Integration and Development**: Apply the knowledge from Phases 1 and 2 to develop a full-fledged program that converts GML files into GIMData.
 2. **Testing and Documentation**: Ensure your project is well-tested, documented, and ready for deployment or further iteration.
 
-For a detailed view of the roadmap and tasks, visit the [Roadmap](#) section.
+For a detailed view of the roadmap and tasks, visit the [Roadmap](https://github.com/adev3141/GIMInterns/wiki/2024-2nd-batch-of-interns-GML--%E2%80%90--GIMData-roadmap) section.
 
 ## Assignments
 
