@@ -12,7 +12,7 @@ using System.Xml.Linq;
 namespace MyConverterNamespace
 {
     internal class GmlCoordianatePrivate
-    {
+    {//not in use
         private class GmlPrivate
         {
         

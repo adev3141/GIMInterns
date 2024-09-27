@@ -15,7 +15,7 @@ namespace MyConverterNamespace
         // Method to extract coordinates from <Point> elements in a GML document.
         public string GetPointCoordinates(XNamespace gmlNamespace, XDocument xDocument)
         {
-            // StringBuilder to efficiently build the string of coordinates.
+            // StringBuilder to build the string of coordinates.
             StringBuilder coordinates = new StringBuilder();
 
             // Extract all <pos> elements within <Point> elements inside <featureMember> elements.
@@ -30,8 +30,7 @@ namespace MyConverterNamespace
                 // Loop over each <pos> element within the current point.
                 foreach (var Posistion in point)
                 {
-                    // Append the text content of the <pos> element (the coordinates) to the StringBuilder.
-                    // AppendLine adds the text followed by a newline.
+                    // Append the text content of the <pos> element to the StringBuilder.
                     coordinates.AppendLine(Posistion.Value);
                 }
             }
@@ -59,7 +58,6 @@ namespace MyConverterNamespace
                 foreach (var CoordinateList in line)
                 {
                     // Append the text content of the <posList> element (the coordinates) to the StringBuilder.
-                    // AppendLine adds the text followed by a newline.
                     coordinates.AppendLine(CoordinateList.Value);
                 }
             }
