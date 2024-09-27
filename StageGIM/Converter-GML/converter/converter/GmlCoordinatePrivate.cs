@@ -11,16 +11,16 @@ using System.Xml.Linq;
 
 namespace MyConverterNamespace
 {
-    internal class GmlCoordinatePrivate
+    internal class GmlCoordianatePrivate
     {
-        public class getFeatures
+        private class GmlPrivate
         {
         
             private string BeginMethodCoordinates(XNamespace GmlNamespace, XDocument xDocument, string points)
             {
-                StringBuilder Coordinates = new StringBuilder();
+               
                 //have to make it so that you chose point or line? and then use it in class gmlCoordinate
-
+                Console.WriteLine("");
                 return "";         
             }
         }
