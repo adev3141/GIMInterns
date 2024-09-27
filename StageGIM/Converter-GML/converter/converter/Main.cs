@@ -17,9 +17,10 @@ namespace MyConverterNamespace
             ConverterClass converter = new ConverterClass();
             bool Running = true;
 
-           
-            // Hard-coded file path for GML files; later try prompting the user for input in the future
-            string filePath = "C:\\Users\\ruvey\\OneDrive - ROC Nijmegen\\school\\Webapplicatie\\webapp2\\GIMInterns\\gml-files";
+
+            // file path for GML files;            
+            Console.WriteLine("Put in the file path to find the gml file");
+            string filePath = Console.ReadLine();
             
             // Define the GML namespace to correctly interpret XML elements
             XNamespace gmlNamespace = "http://www.opengis.net/gml/3.2";
