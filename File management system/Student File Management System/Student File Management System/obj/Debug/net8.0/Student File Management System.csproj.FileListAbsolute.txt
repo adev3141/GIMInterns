@@ -1,0 +1,15 @@
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\bin\Debug\net8.0\Student File Management System.exe
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\bin\Debug\net8.0\Student File Management System.deps.json
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\bin\Debug\net8.0\Student File Management System.runtimeconfig.json
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\bin\Debug\net8.0\Student File Management System.dll
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\bin\Debug\net8.0\Student File Management System.pdb
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.AssemblyInfoInputs.cache
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.AssemblyInfo.cs
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.csproj.CoreCompileInputs.cache
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.sourcelink.json
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.dll
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\refint\Student File Management System.dll
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.pdb
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\Student File Management System.genruntimeconfig.cache
+C:\Users\nijme\Desktop\OpdrachtenStage\File management system\Student File Management System\Student File Management System\obj\Debug\net8.0\ref\Student File Management System.dll

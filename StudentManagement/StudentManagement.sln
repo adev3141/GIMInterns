@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentManagement", "StudentManagement\StudentManagement.csproj", "{18E18327-9776-4016-B556-B3DD1F053601}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "library", "..\..\..\Downloads\GIMInterns-StijnR\GIMInterns-StijnR\library\library.csproj", "{BDEB2BE2-5650-4618-AD33-9351B4F5BB09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18E18327-9776-4016-B556-B3DD1F053601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18E18327-9776-4016-B556-B3DD1F053601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18E18327-9776-4016-B556-B3DD1F053601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18E18327-9776-4016-B556-B3DD1F053601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEB2BE2-5650-4618-AD33-9351B4F5BB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEB2BE2-5650-4618-AD33-9351B4F5BB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEB2BE2-5650-4618-AD33-9351B4F5BB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEB2BE2-5650-4618-AD33-9351B4F5BB09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A58BE87B-38A2-4CFF-ABF7-5EF1C11CCC73}
+	EndGlobalSection
+EndGlobal
